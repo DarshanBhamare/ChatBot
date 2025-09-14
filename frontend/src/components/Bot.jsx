@@ -14,8 +14,8 @@ function Bot() {
   }, [messages]);
 
   // Use environment variable or fallback to localhost for development
-  const BACKEND_URL =
-    process.env.REACT_APP_BACKEND_URL || "http://localhost:4002";
+    const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+
 
   const handleSendMessage = async () => {
     if (!input.trim()) return;
