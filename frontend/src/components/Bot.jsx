@@ -16,9 +16,10 @@ function Bot() {
         setLoading(true);
         if(!input.trim()) return;
         try {
-           const res=await axios.post("http://localhost:4002/bot/v1/message",{
-                text: input
+           const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/bot/v1/message`, {
+              text: input
             })
+
             if(res.status === 200) {
                 setMessages([...messages, { text: res.data.userMessage, sender: 'user' }, { text: res.data.botMessage, sender: 'bot' }]);
                
