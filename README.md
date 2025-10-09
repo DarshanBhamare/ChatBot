@@ -14,7 +14,7 @@ A full-stack chatbot application with a React frontend and Node.js/Express backe
 ## 🛠️ Tech Stack
 
 - **Frontend:** React, Tailwind CSS (or your CSS framework)
-- **Backend:** Node.js, Express.js
+- **Backend:** Node.js, Express.Js
 - **Database:** (if applicable, e.g., MongoDB)
 - **Deployment:** Vercel (frontend), Render (backend)
 
